@@ -1,4 +1,4 @@
 # Russification progress
 
 fileTemplates complete
-intentionDescriptions 4
+intentionDescriptions complete
