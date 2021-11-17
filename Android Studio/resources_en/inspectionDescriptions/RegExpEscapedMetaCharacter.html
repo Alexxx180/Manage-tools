@@ -4,12 +4,12 @@
 
 <html>
 <body>
-Reports the escaped meta characters, e.g. <b><code>\.</code></b>.
-Some RegExp coding styles specify that meta characters should be placed inside a character class,
-to make the regular expression easier to understand.
-For example the regex <b><code>\d+\.\d+</code></b> would be written as <code>\d+[.]\d+</code>.
-This inspection does not warn about the meta character <b><code>[</code></b>, <b><code>]</code></b> and <b><code>^</code></b>,
-because those would need additional escaping inside a character class.
+Докладывает о meta символах избегающей последовательности, такие как <b><code>\.</code></b>.
+Некоторые стили кода регулярных выражений определяют, что meta-символы должны быть расположены внутри класса сиволов,
+чтобы сделать регулярное выражение более легким для понимания.
+К примеру выражение <b><code>\d+\.\d+</code></b> может быть записано как <code>\d+[.]\d+</code>.
+Проверка не предупреждает о meta-символах <b><code>[</code></b>, <b><code>]</code></b> and <b><code>^</code></b>,
+т.к. им нужна дополнительная избегающая последовательность внутри класса символов.
 <!-- tooltip end -->
 <p><small>New in 2017.1</small>
 </body>
