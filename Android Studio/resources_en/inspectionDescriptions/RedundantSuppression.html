@@ -1,19 +1,19 @@
 <html>
 <body>
-Reports usages of
+Докладывает об использовании
 <ul>
-  <li><code>@SuppressWarning</code> annotation, or</li>
-  <li><code>// noinspection</code> line comment, or</li>
-  <li><code>/** noinspection */</code> JavaDoc comment</li>
+  <li>аннотации <code>@SuppressWarning</code>, или</li>
+  <li>строковый комментарий<code>// noinspection</code>, или</li>
+  <li>комментарий JavaDoc<code>/** noinspection */</code></li>
 </ul>
 
-which can be safely removed because inspection they affect is no longer applicable in this context.
+который может быть безопасно убран, т.к. проверка больше не применима в данном контексте.
 <p>
-  For example:
+  К примеру:
   <code><pre>
 <b><font color="#000080">public class</font></b> C {
- // symbol is already private,
- // but annotation is still around
+ // символ уже в частном доступе,
+ // на аннотация все еще присутствует
   @SuppressWarnings({"WeakerAccess"})
  <b><font color="#000080">private boolean</font></b> CONST = <b><font color="#000080">true</font></b>;
  <b><font color="#000080">void</font></b> f() {

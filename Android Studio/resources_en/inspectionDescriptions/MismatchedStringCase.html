@@ -1,12 +1,12 @@
 <html>
 <body>
-Reports string methods calls that always return the same value (-1 or false) because a lowercase character is searched in an
-uppercase-only string or vice versa. Reported methods include 'equals', 'startsWith', 'endsWith', 'contains', 'indexOf', and 'lastIndexOf'.
-Example:
+Докладывает о вызовах строковых методов, которые всегда возвращают одно и то же значение (-1 или ложь) из-за поиска символов нижнего регистра как
+высшего регистра - только строки или наоборот. Докладываемые методы включают 'equals', 'startsWith', 'endsWith', 'contains', 'indexOf' и 'lastIndexOf'.
+Например:
 <pre>
-  if (columnName.toLowerCase().equals("ID")) {...} // condition is always false
+  if (columnName.toLowerCase().equals("ID")) {...} // условие всегда ложно
 </pre>
 <!-- tooltip end -->
-<p><small>New in 2019.3</small></p>
+<p><small>Новинки 2019.3</small></p>
 </body>
 </html>

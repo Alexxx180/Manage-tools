@@ -4,12 +4,12 @@
 
 <html>
 <body>
-Reports exponential backtracking in a RegExp, which can lead to extremely slow matching.
-Exponential backtracking can happen when a single string can be matched in multiple ways, leading to exponential runtime.
-Exponential backtracking is also known as Regular Expression Denial of Service (ReDoS), catastrophic backtracking, explosive quantifiers
-and exponential matching.
-This inspection only detects a limited form of exponential backtracking,
-so the absence of a warning is not a guarantee the pattern does not contain a exponential backtracking problem.
+Сообщает об экспоненциальном откате в регулярном выражении, которое может привести к чрезвычайно медленному сравнению.
+Экспоненциальный откат может произойти когда одну строку можно сравнить разными способами, ведущим к времени выполнения, достигающем экспоненты.
+Экспоненциальный откат также известен как Отказ в Обслуживании Регулярного Выражения (ОвОРВ), тяжелого отката, взрывных квантаров
+и экспоненциального сравнения.
+Обнаруживает только ограниченную форму экспоненциального отката,
+так что отсутствие предупреждения - не гарантия, что шаблон не содержит данную проблему.
 
 <!-- tooltip end -->
 <p>
